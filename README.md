@@ -32,16 +32,6 @@ Getting statement from the user to print or not want to print
 #Developed by : Mohamed Anas O.I
 #Reg no : 23008005
 
-import sys
-count=0
-with open(sys.argv[1],'r') as f:
-        for line in f:
-            word=line.split()
-            count+=len(word)
-print("Word Count in File=",count)
-from shutil import copyfile
-from sys import exit
-
 source = input("Enter source file with full path: ")
 target = input("Enter target file with full path: ")
 
